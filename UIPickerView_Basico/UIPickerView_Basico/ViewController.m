@@ -14,6 +14,9 @@
 
 @implementation ViewController
 
+@synthesize ultimaAccion, resultado;
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -26,4 +29,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setUltimaAccion:nil];
+    [self setResultado:nil];
+    [super viewDidUnload];
+}
 @end
