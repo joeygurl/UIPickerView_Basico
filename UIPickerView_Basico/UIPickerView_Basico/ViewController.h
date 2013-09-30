@@ -14,4 +14,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *ultimaAccion;
 @property (strong, nonatomic) IBOutlet UILabel *resultado;
 
+@property (nonatomic, strong) NSArray * nombreAnimales;
+@property (nonatomic, strong) NSArray * sonidosAnimales;
+
+
 @end

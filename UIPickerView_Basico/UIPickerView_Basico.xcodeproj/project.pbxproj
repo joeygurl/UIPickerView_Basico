@@ -18,6 +18,13 @@
 		CB53DBF817F9E35B00D38B10 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB53DBF717F9E35B00D38B10 /* Default-568h@2x.png */; };
 		CB53DBFB17F9E35B00D38B10 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB53DBF917F9E35B00D38B10 /* MainStoryboard.storyboard */; };
 		CB53DBFE17F9E35B00D38B10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB53DBFD17F9E35B00D38B10 /* ViewController.m */; };
+		CB53DC0C17F9F42800D38B10 /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = CB53DC0517F9F42800D38B10 /* bear.png */; };
+		CB53DC0D17F9F42800D38B10 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = CB53DC0617F9F42800D38B10 /* cat.png */; };
+		CB53DC0E17F9F42800D38B10 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = CB53DC0717F9F42800D38B10 /* dog.png */; };
+		CB53DC0F17F9F42800D38B10 /* goose.png in Resources */ = {isa = PBXBuildFile; fileRef = CB53DC0817F9F42800D38B10 /* goose.png */; };
+		CB53DC1017F9F42800D38B10 /* mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = CB53DC0917F9F42800D38B10 /* mouse.png */; };
+		CB53DC1117F9F42800D38B10 /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = CB53DC0A17F9F42800D38B10 /* pig.png */; };
+		CB53DC1217F9F42800D38B10 /* snake.png in Resources */ = {isa = PBXBuildFile; fileRef = CB53DC0B17F9F42800D38B10 /* snake.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,13 @@
 		CB53DBFA17F9E35B00D38B10 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CB53DBFC17F9E35B00D38B10 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CB53DBFD17F9E35B00D38B10 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB53DC0517F9F42800D38B10 /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
+		CB53DC0617F9F42800D38B10 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		CB53DC0717F9F42800D38B10 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		CB53DC0817F9F42800D38B10 /* goose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goose.png; sourceTree = "<group>"; };
+		CB53DC0917F9F42800D38B10 /* mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouse.png; sourceTree = "<group>"; };
+		CB53DC0A17F9F42800D38B10 /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.png; sourceTree = "<group>"; };
+		CB53DC0B17F9F42800D38B10 /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,7 @@
 		CB53DBE717F9E35A00D38B10 /* UIPickerView_Basico */ = {
 			isa = PBXGroup;
 			children = (
+				CB53DC0417F9F41700D38B10 /* img */,
 				CB53DBF017F9E35B00D38B10 /* AppDelegate.h */,
 				CB53DBF117F9E35B00D38B10 /* AppDelegate.m */,
 				CB53DBF917F9E35B00D38B10 /* MainStoryboard.storyboard */,
@@ -105,6 +120,20 @@
 				CB53DBF717F9E35B00D38B10 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB53DC0417F9F41700D38B10 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				CB53DC0517F9F42800D38B10 /* bear.png */,
+				CB53DC0617F9F42800D38B10 /* cat.png */,
+				CB53DC0717F9F42800D38B10 /* dog.png */,
+				CB53DC0817F9F42800D38B10 /* goose.png */,
+				CB53DC0917F9F42800D38B10 /* mouse.png */,
+				CB53DC0A17F9F42800D38B10 /* pig.png */,
+				CB53DC0B17F9F42800D38B10 /* snake.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +192,13 @@
 				CB53DBF617F9E35B00D38B10 /* Default@2x.png in Resources */,
 				CB53DBF817F9E35B00D38B10 /* Default-568h@2x.png in Resources */,
 				CB53DBFB17F9E35B00D38B10 /* MainStoryboard.storyboard in Resources */,
+				CB53DC0C17F9F42800D38B10 /* bear.png in Resources */,
+				CB53DC0D17F9F42800D38B10 /* cat.png in Resources */,
+				CB53DC0E17F9F42800D38B10 /* dog.png in Resources */,
+				CB53DC0F17F9F42800D38B10 /* goose.png in Resources */,
+				CB53DC1017F9F42800D38B10 /* mouse.png in Resources */,
+				CB53DC1117F9F42800D38B10 /* pig.png in Resources */,
+				CB53DC1217F9F42800D38B10 /* snake.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
