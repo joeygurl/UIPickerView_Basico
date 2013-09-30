@@ -64,12 +64,50 @@
 
  - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
      NSInteger dato = componenteAnimal;     
- if (component==dato) {
- return [nombreAnimales objectAtIndex:row];
- } else {
- return [sonidosAnimales objectAtIndex:row];
- }
+     if (component==dato) {
+         return [nombreAnimales objectAtIndex:row];
+     } else {
+         return [sonidosAnimales objectAtIndex:row];
+     }
  }
 
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+
+    NSString *mensajeAccion;
+    NSString *mensajeCoincidencia;
+    
+    int seleccionAnimal;
+    int seleccionSonido;
+    int sonidoCoincidencia;
+    
+    
+    NSInteger auxComponenteAnimal = componenteAnimal;
+    NSInteger auxComponenteSonido = componenteSonido;
+    
+    if (component==auxComponenteAnimal) {
+    mensajeAccion = [[NSString alloc] initWithFormat:@"Tu seleccionaste el animal llamado '%@' ",[nombreAnimales objectAtIndex:row]];
+    } else {
+    mensajeAccion = [[NSString alloc] initWithFormat:@"Tu seleccionaste el sonido de animal  '%@' ",[sonidosAnimales objectAtIndex:row]];
+    }
+    
+    seleccionAnimal = [pickerView selectedRowInComponent:auxComponenteAnimal];
+    seleccionSonido = [pickerView selectedRowInComponent:auxComponenteSonido];
+
+    sonidoCoincidencia = ([sonidosAnimales count]-1)-[pickerView selectedRowInComponent:auxComponenteSonido];
+    
+    
+    if (seleccionAnimal == sonidoCoincidencia) {
+        mensajeCoincidencia = [[NSString alloc] initWithFormat:@"Yes, a %@ dice '%@'! ",
+                               [nombreAnimales objectAtIndex:seleccionAnimal],
+                               [sonidosAnimales objectAtIndex:seleccionSonido]];
+    } else {
+        mensajeCoincidencia = [[NSString alloc] initWithFormat:@"NO, el %@ NO dice '%@'! ",
+                               [nombreAnimales objectAtIndex:seleccionAnimal],
+                               [sonidosAnimales objectAtIndex:seleccionSonido]];
+    }
+    
+    ultimaAccion.text = mensajeAccion;
+    resultado.text = mensajeCoincidencia;
+}
 
 @end
