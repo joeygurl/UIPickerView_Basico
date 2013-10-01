@@ -17,5 +17,7 @@
 @property (nonatomic, strong) NSArray * nombreAnimales;
 @property (nonatomic, strong) NSArray * sonidosAnimales;
 
+@property (nonatomic, strong) NSArray * imagenesAnimales;
+
 
 @end
